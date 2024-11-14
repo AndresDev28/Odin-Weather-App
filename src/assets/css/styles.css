@@ -5,6 +5,8 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +14,16 @@ body {
   background-image: linear-gradient(315deg, #5cfc42 10%, #68ede1 90%);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+}
+
+.loading-data {
+  width: 400px;
+  height: 400px;
+  background-color: #000;
+}
+.loading-data img {
+  width: 400px;
+  height: 400px;
 }
 
 header {
@@ -69,7 +80,7 @@ form {
 .content {
   display: grid;
   grid-template-columns: 20% 80%;
-  width: 1200px;
+  width: 90%;
   height: 90%;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -170,7 +181,7 @@ hr {
   height: 30px;
 }
 
-.template-location {
+.picture-location {
   flex: 0 0 10%;
 }
 
@@ -340,3 +351,5 @@ hr {
 .temp-min {
   color: #9a9a9a;
 }
+
+
