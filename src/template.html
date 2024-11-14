@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odin Weather App</title>
+</head>
+<body>
+  <header>
+    <h1 class="title-app">Weather App</h1>
+    <form action="" id="getWeather">
+      <label for="location">Location:</label>
+      <div class="search-container">
+        <input type="text" id="location" placeholder="city..." required>
+        <button type="submit" id="searchBtn">Search</button>
+      </div>
+    </form>
+  </header>
+  <div class="content">
+    <div class="left-side" id="leftSide">
+      <div class="first-row">
+        <h2 class="intro-weather">Weather in: </h2>
+        <h3 class="address" id="address"></h3>
+      </div>
+      <div class="second-row">
+        <div class="current-weather-image">
+          <img alt="Current Weather" id="currentConditionsImg">
+        </div>
+        <div class="current-temp" id="currentTemp">
+          12°C
+        </div>
+        <div class="current-dayHour">
+          <div class="current-day-title" id="currentDayTitle"></div>
+          <div class="current-hour" id="currentHour"></div>
+        </div>
+      </div>
+      <hr>
+      <div class="third-row">
+        <div class="current-conditions">
+          <img src="#" alt="Current Conditions" id="currentConditionsIcon">
+          <p id="currentConditionsText"></p>
+        </div>
+        <div class="rain-conditions">
+          <img src="./assets/images/umbrella.png" alt="Rain conditions" id="rainConditionsIcon">
+          <p id="rainConditionsText"></p>
+        </div>
+      </div>
+      <div class="template-location">
+        <img src="#" alt="Image location">
+        <p id="textLocation">New York</p>
+      </div>
+    </div>
+    <!-- Right side section -->
+    <div class="right-side">
+      <div class="top-section">
+        <div class="today-week">
+          <h3>Week Forecast</h3>
+        </div>
+        <div class="controllers-btn">
+          <button class="control-btn" id="celsiusBtn">°C</button>
+          <button class="control-btn" id="fahrenheitBtn">°F</button>
+        </div>
+      </div>
+      <div class="selected-display">
+        <p id="todayDescription"></p>
+        <div class="week-display">
+          
+        </div>
+      </div>
+      <div class="bottom-section">
+        <div class="bottom-title">
+          <h3>Today's Highlights</h3>
+        </div>
+        <div class="bottom-info">
+          <div class="card">
+            <p class="card-title">UV Index</p>
+            <div class="card-content">
+              <img src="./assets/images/clear-day.png" alt="UV Index" id="uvIndexImg">
+            <span id="uvIndexValue">5</span>
+            </div>
+          </div>
+          <div class="card">
+            <p class="card-title">Wind Status</p>
+            <div class="card-content">
+              <img src="./assets/images/wind.png" alt="Wind Status" id="windStatusImg">
+            <span id="windStatusValue">7.70</span>
+            </div> 
+          </div>
+          <div class="card">
+            <p class="card-title">Sunrise & Sunset</p>
+            <div class="sunrise-sunset">
+              <div class="sunrise">
+                <img src="./assets/images/sunrise.png" alt="Sunrise" id="sunriseImg">
+                <span id="sunriseValue">6:35 AM</span>
+              </div>
+              <div class="sunset">
+                <img src="./assets/images/sunset.png" alt="Sunset" id="sunsetImg">
+                <span id="sunsetValue">5:42 PM</span>
+              </div> 
+            </div>  
+          </div>
+          <div class="card">
+            <p class="card-title">Humidity</p>
+            <div class="card-content">
+              <img src="./assets/images/humidity.png" alt="Humidity" id="humidityImg">
+            <span id="humidityValue">12%</span>
+            </div>
+          </div>
+          <div class="card">
+            <p class="card-title">Rain</p>
+            <div class="card-conten">
+              <img src="./assets/images/umbrella.png" alt="Rain" id="rainImg">
+              <span id="rainValue">5%</span>
+            </div>
+          </div>
+          <div class="card">
+            <p class="card-title">Pressure</p>
+            <div class="card-content">
+              <img src="./assets/images/pressure-removebg-preview.png" alt="Pressure" id="pressureImg">
+              <span id="pressureValue">1024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="dataInfo"></div>
+</body>
+</html>
