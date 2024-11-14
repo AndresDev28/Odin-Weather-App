@@ -17,6 +17,7 @@ body {
 
 header {
   display: flex;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   justify-content: space-around;
   align-items: center;
@@ -184,20 +185,23 @@ hr {
 
 .top-section {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   width: 100%;
+  gap: 1rem;
 }
 
-.today-week {
+.top-row {
   display: flex;
-  gap: 0.5rem;
+  gap: 2rem;
+}
+
+#todayDescription {
+  width: 80%;
 }
 
 .controllers-btn {
   display: flex;
-  gap: 2rem;
-  padding-right: 2rem;  
+  gap: 1rem;  
 }
 
 .control-btn {
@@ -223,12 +227,14 @@ hr {
   background-color:#1FA2FF;
 }
 
-/* Estilos para Today Display / Week Display */
 
-.selected-display {
+
+
+.bottom-row {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Estilos para bottom section */
@@ -236,7 +242,7 @@ hr {
 .bottom-section {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .bottom-title {

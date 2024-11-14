@@ -53,20 +53,22 @@
     <!-- Right side section -->
     <div class="right-side">
       <div class="top-section">
-        <div class="today-week">
-          <h3>Week Forecast</h3>
+        <div class="top-row">
+          <p id="todayDescription"></p>
+          <div class="controllers-btn">
+            <button class="control-btn" id="celsiusBtn">°C</button>
+            <button class="control-btn" id="fahrenheitBtn">°F</button>
+          </div>
         </div>
-        <div class="controllers-btn">
-          <button class="control-btn" id="celsiusBtn">°C</button>
-          <button class="control-btn" id="fahrenheitBtn">°F</button>
+        <div class="bottom-row">
+          <div class="week-forecast">
+            <h3>Week Forecast</h3>
+          </div>
+          <div class="week-display">
+          </div>
         </div>
       </div>
-      <div class="selected-display">
-        <p id="todayDescription"></p>
-        <div class="week-display">
-          
-        </div>
-      </div>
+            
       <div class="bottom-section">
         <div class="bottom-title">
           <h3>Today's Highlights</h3>
